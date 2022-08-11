@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import web.models.Car;
-import web.service.CarService;
+import web.service.CarServiceImpl;
 
 import java.util.List;
 
@@ -15,9 +15,9 @@ import java.util.List;
 @RequestMapping("/cars")
 public class CarController {
     @Autowired
-    private final CarService service;
+    private final CarServiceImpl service;
 
-    public CarController(CarService service) {
+    public CarController(CarServiceImpl service) {
         this.service = service;
     }
 
