@@ -12,13 +12,9 @@ import java.util.stream.Collectors;
 public class CarServiceImpl implements CarService {
     @Autowired
     private CarsDao carsDao;
-@Override
+    @Override
     public List<Car> list(int count) {
-
-
         List<Car> list = carsDao.getList();
-
-
         return list.stream().limit(count).collect(Collectors.toList());
     }
 }

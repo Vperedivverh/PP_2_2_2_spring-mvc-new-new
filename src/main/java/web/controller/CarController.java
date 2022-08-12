@@ -32,6 +32,5 @@ public class CarController {
             model.addAttribute("cars", list);
             return "cars";
         }
-
     }
 }
