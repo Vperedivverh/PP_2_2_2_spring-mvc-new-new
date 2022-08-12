@@ -17,7 +17,7 @@ public class CarController {
     @Autowired
     private final CarServiceImpl service;
 
-    public CarController(CarServiceImpl service) {
+    public CarController(CarServiceImpl service)  {
         this.service = service;
     }
 
@@ -32,6 +32,5 @@ public class CarController {
             model.addAttribute("cars", list);
             return "cars";
         }
-
     }
 }

@@ -5,10 +5,10 @@ import web.models.Car;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Component
 public class CarsDaoImpl implements CarsDao {
-   private List<Car> list = new ArrayList<>();
-
+    private List<Car> list = new ArrayList<>();
     {
         list.add(new Car("1", "11", 111));
         list.add(new Car("2", "22", 222));
@@ -16,7 +16,8 @@ public class CarsDaoImpl implements CarsDao {
         list.add(new Car("4", "44", 444));
         list.add(new Car("5", "55", 555));
     }
-@Override
+
+    @Override
     public List<Car> getList() {
         return list;
     }

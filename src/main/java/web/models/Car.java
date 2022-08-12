@@ -19,15 +19,6 @@ public class Car {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "name='" + name + '\'' +
-                ", color='" + color + '\'' +
-                ", number=" + number +
-                '}';
-    }
-
     public String getColor() {
         return color;
     }
@@ -42,5 +33,14 @@ public class Car {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", number=" + number +
+                '}';
     }
 }
